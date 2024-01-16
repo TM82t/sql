@@ -24,3 +24,14 @@ SQL(エスキューエル)とはクエリを書くための言語。
 |DELETE文|データベースのデータを削除するための構文|
 |AS句|テーブルや列を別の名前に変更するための構文|
 |ORDER BY|SELECTの結果を並び替えるための構文|
+
+### 複数のカラムの取り出し
+複数のカラムからデータを取得する場合はカラム名をコンマ（ , ）で区切る。
+```
+SELECT id, name, price, character_name, category, purchased_at
+FROM purchases;
+```
+全カラムのデータを取得する場合は「＊」の記号を用います。
+```
+SELECT *
+```
